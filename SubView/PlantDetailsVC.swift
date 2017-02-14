@@ -24,12 +24,22 @@ class PlantDetailsViewController: UICollectionViewController, UICollectionViewDe
         return 5
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch indexPath.row {
         
         case 0:
             collectionView.register(ActivityCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        case 1:
+            collectionView.register(RedViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
             
         default:
             collectionView.register(ActivityCell.self, forCellWithReuseIdentifier: cellIdentifier)

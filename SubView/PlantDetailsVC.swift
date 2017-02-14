@@ -25,7 +25,7 @@ class PlantDetailsViewController: UICollectionViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        return CGSize(width: view.frame.width, height: 400)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -37,7 +37,7 @@ class PlantDetailsViewController: UICollectionViewController, UICollectionViewDe
         switch indexPath.row {
         
         case 0:
-            collectionView.register(ActivityCell.self, forCellWithReuseIdentifier: cellIdentifier)
+            collectionView.register(ActivityCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         case 1:
             collectionView.register(RedViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
             

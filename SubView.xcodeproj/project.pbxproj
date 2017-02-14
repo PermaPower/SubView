@@ -16,6 +16,7 @@
 		63F840581E5289BA002C62F2 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F840571E5289BA002C62F2 /* Style.swift */; };
 		63F8405A1E5289CF002C62F2 /* Style+myApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F840591E5289CF002C62F2 /* Style+myApp.swift */; };
 		63F8405E1E528B0B002C62F2 /* RedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8405D1E528B0A002C62F2 /* RedViewCell.swift */; };
+		63F840621E52A700002C62F2 /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F840611E52A700002C62F2 /* ActivityCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		63F840571E5289BA002C62F2 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		63F840591E5289CF002C62F2 /* Style+myApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Style+myApp.swift"; sourceTree = "<group>"; };
 		63F8405D1E528B0A002C62F2 /* RedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewCell.swift; sourceTree = "<group>"; };
+		63F840611E52A700002C62F2 /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				63F840531E5288E4002C62F2 /* ActivityViewCell.swift */,
 				63F8405D1E528B0A002C62F2 /* RedViewCell.swift */,
+				63F840611E52A700002C62F2 /* ActivityCollectionViewCell.swift */,
 			);
 			name = CollectionViewCells;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				63F840381E527982002C62F2 /* PlantDetailsVC.swift in Sources */,
 				63F840361E527982002C62F2 /* AppDelegate.swift in Sources */,
 				63F840561E5289A3002C62F2 /* Extensions.swift in Sources */,
+				63F840621E52A700002C62F2 /* ActivityCollectionViewCell.swift in Sources */,
 				63F840581E5289BA002C62F2 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

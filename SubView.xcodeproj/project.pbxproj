@@ -46,8 +46,6 @@
 		63F840291E527982002C62F2 = {
 			isa = PBXGroup;
 			children = (
-				63F8405C1E528A2D002C62F2 /* Extensions */,
-				63F8405B1E528A20002C62F2 /* Style */,
 				63F840341E527982002C62F2 /* SubView */,
 				63F840331E527982002C62F2 /* Products */,
 			);
@@ -64,10 +62,10 @@
 		63F840341E527982002C62F2 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				63F8405F1E528BD2002C62F2 /* ViewController */,
+				63F8405C1E528A2D002C62F2 /* Extensions */,
+				63F8405B1E528A20002C62F2 /* Style */,
 				63F840351E527982002C62F2 /* AppDelegate.swift */,
-				63F840371E527982002C62F2 /* PlantDetailsVC.swift */,
-				63F840531E5288E4002C62F2 /* ActivityViewCell.swift */,
-				63F8405D1E528B0A002C62F2 /* RedViewCell.swift */,
 				63F8403C1E527982002C62F2 /* Assets.xcassets */,
 				63F8403E1E527982002C62F2 /* LaunchScreen.storyboard */,
 				63F840411E527982002C62F2 /* Info.plist */,
@@ -82,6 +80,7 @@
 				63F840591E5289CF002C62F2 /* Style+myApp.swift */,
 			);
 			name = Style;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		63F8405C1E528A2D002C62F2 /* Extensions */ = {
@@ -90,6 +89,25 @@
 				63F840551E5289A3002C62F2 /* Extensions.swift */,
 			);
 			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63F8405F1E528BD2002C62F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63F840371E527982002C62F2 /* PlantDetailsVC.swift */,
+				63F840601E528BFA002C62F2 /* CollectionViewCells */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		63F840601E528BFA002C62F2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				63F840531E5288E4002C62F2 /* ActivityViewCell.swift */,
+				63F8405D1E528B0A002C62F2 /* RedViewCell.swift */,
+			);
+			name = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

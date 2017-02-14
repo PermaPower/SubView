@@ -10,6 +10,10 @@ import UIKit
 
 class PlantDetailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView?.collectionViewLayout.invalidateLayout()
+    }
+    
     let cellIdentifier = "CellID"
     let style = Style.myApp
     

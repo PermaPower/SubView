@@ -11,7 +11,8 @@ import UIKit
 class PlantDetailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellIdentifier = "CellID"
-
+    let style = Style.myApp
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

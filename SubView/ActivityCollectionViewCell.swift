@@ -29,13 +29,11 @@ class ActivityCollectionViewCell: UICollectionViewCell, UICollectionViewDataSour
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.allowsMultipleSelection = true
+        collectionView.isScrollEnabled = false
         return collectionView
     }()
-    
 
-    
-    
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12
     }
@@ -52,6 +50,24 @@ class ActivityCollectionViewCell: UICollectionViewCell, UICollectionViewDataSour
         let height = width // square cells
         
         return CGSize(width: width, height: height)
+    }
+    
+    // Detetect if UICollectionViewCell was selected
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell : UICollectionViewCell = collectionView.cellForItem(at: indexPath)!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = UIColor.myAppRed
+        print("Selected: \(indexPath.row)" )
+    }
+    
+    // Detetect if UICollectionViewCell was deselected
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell : UICollectionViewCell = collectionView.cellForItem(at: indexPath)!
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = .clear
+        print("DeSelected: \(indexPath.row)" )
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

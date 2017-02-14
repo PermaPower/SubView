@@ -29,7 +29,17 @@ class PlantDetailsViewController: UICollectionViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 400)
+        
+        switch indexPath.row {
+            
+        case 0:
+            return CGSize(width: view.frame.width, height: 113)
+        case 1:
+            return CGSize(width: view.frame.width, height: 400)
+        default:
+            return CGSize(width: view.frame.width, height: 400)
+
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
